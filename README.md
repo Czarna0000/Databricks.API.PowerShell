@@ -1,4 +1,4 @@
-# PowerShell Module for Databricks
+#2 PowerShell Module for Databricks
 
 This repository contains the source code for the PowerShell module "DatabricksPS". The module can also be found in the public PowerShell gallery: https://www.powershellgallery.com/packages/DatabricksPS/
 
@@ -65,8 +65,7 @@ gdbrc | spdbrc
 gdbrjr -JobID 123 | gdbrjro
 ```
 
-# Common snippets
-Below you can find a list of common snippets that I found useful and use very frequently. All snippets use the Personal Access Token for authentication but of course also work with Azure Active Directory user and service principal authentication (see [Authentication](#authentication)).
+# Common snippets00useful and use very frequently. All snippets use the Personal Access Token for authentication but of course also work with Azure Active Directory user and service principal authentication (see [Authentication](#autphentication))Authentication](#autphentication)).
 ## Stop all clusters at the end of the day
 ```powershell
 Set-DatabricksEnvironment -AccessToken "dapi123...def" -ApiRootUrl "https://westeurope.azuredatabricks.net"
@@ -75,7 +74,7 @@ Get-DatabricksCluster | Stop-DatabricksCluster
 
 ## Export a whole or single parts of a Databricks workspace
 ```powershell
-Set-DatabricksEnvironment -AccessToken "dapi123...def" -ApiRootUrl "https://westeurope.azuredatabricks.net"
+Set-DatabricksEnvironment -AccessToken "dapi123...def" -ApiRootUrl ""
 Export-DatabricksEnvironment -CleanLocalRootPath -LocalPath "C:\\my_export" -Artifacts @("Workspace", "Clusters", "Jobs")
 ```
 
