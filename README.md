@@ -25,8 +25,8 @@ Import-Module "C:\MyPSModules\Modules\DatabricksPS"
 # Usage
 The module is designed to set the connection relevant properties once and they are used for all other cmdlets then. You can always update this information during your PS sessions to connect to different Databricks environments in the same session.
 ```powershell
-$accessToken = "dapi123456789e672c4007052d4694a7c51"
-$apiUrl = "https://westeurope.azuredatabricks.net"
+$accessToken = "dapi123456789e6$apiUrl = "https://westeurope.azuredatabricks.net"
+72c4007052d4694a7c51"
 
 Set-DatabricksEnvironment -AccessToken $accessToken -ApiRootUrl $apiUrl
 ```
